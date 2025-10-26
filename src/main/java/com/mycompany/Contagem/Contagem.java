@@ -30,4 +30,5 @@ public class Contagem {
     public int getContagemB(){
         return this.contagemB;
     }
+    
 }
