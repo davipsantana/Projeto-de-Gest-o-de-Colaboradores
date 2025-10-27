@@ -25,8 +25,9 @@ public class JovemAprendiz extends Colaborador {
    
         System.out.println("Nome: " + this.getNome());
         System.out.println("Ano Nasciemnto: " + this.getAnoNascimento());
-        System.out.println("Dia do curso: " + this.getTurno());
+        System.out.println("Turno: " + this.getTurno());
         System.out.println("idade: "+this.getIdade());
+        System.out.println("Dias de curso: "+this.getDiasCurso());
          System.out.println("------------------------------");
     }
     

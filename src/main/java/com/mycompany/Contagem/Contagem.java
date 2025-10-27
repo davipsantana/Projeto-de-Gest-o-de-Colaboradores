@@ -5,15 +5,16 @@
 package com.mycompany.Contagem;
 
 import com.mycompany.meuProjeto.Colaborador;
+import com.mycompany.meuProjeto.JovemAprendiz.JovemAprendiz;
 
-/**
- *
- * @author davip
- */
+
 public class Contagem {
     
     private static int contagemA = 0;
     private static int contagemB = 0;
+    
+    private static int cursoTerca = 0;
+    private static int cursoQuinta = 0;
     
    
     public void setContagemDoTurno(Colaborador c){   
@@ -23,6 +24,16 @@ public class Contagem {
         else {
             this.contagemB += 1;
         }
+        
+    }
+    
+    public void setDiasdeCurso(JovemAprendiz a){
+        if (a.getDiasCurso() == "Terca"){
+            this.cursoTerca +=1;
+        }
+        else {
+            this.cursoQuinta +=1;
+        }
     }
     public int getContagemA() {
         return this.contagemA;
@@ -31,4 +42,10 @@ public class Contagem {
         return this.contagemB;
     }
     
+    public int getCursoTerca(){
+        return this.cursoTerca;
+    }
+    public int getCursoQuinta (){
+        return this.cursoQuinta;
+    }
 }

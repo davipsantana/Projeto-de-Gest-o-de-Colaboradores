@@ -18,7 +18,7 @@ public class Colaborador {
     private int anoNascimento;
     private int codRH; 
     private int idade;
-    
+        
     public Colaborador (String turno, String nome, int anoNascimento, int codRH){
         this.nome = nome;
         this.anoNascimento = anoNascimento;

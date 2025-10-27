@@ -25,16 +25,21 @@ public class MeuProjeto {
         JovemAprendiz jv4 = new JovemAprendiz ("B", "Davi", 1999, 21000285, "Terca");
         jv4.detalhesJovem();
 
-        
         Contagem c = new Contagem();
         c.setContagemDoTurno(jv1);
         c.setContagemDoTurno(jv2);
         c.setContagemDoTurno(jv3);
         c.setContagemDoTurno(jv4);
+        c.setDiasdeCurso(jv1);
+        c.setDiasdeCurso(jv2);
+        c.setDiasdeCurso(jv3);
+        c.setDiasdeCurso(jv4);
         
         System.out.println("Total de Jovens do Turno A: "+c.getContagemA());
         System.out.println("Total de Jovens do Turno B: "+c.getContagemB());
-        /*
+        System.out.println("Total de jovens de curso na Terca: "+c.getCursoTerca());
+        System.out.println("Total de jovens de curso na Quinta: "+c.getCursoQuinta()); 
+       /*
         System.out.println("Total de Jovem Aprendiz turno A: "+JovemAprendiz.getContagemA());
         System.out.println("Total de Jovem Aprendiz turno B: "+JovemAprendiz.getContagemB());
 */
