@@ -5,6 +5,7 @@
 
 package com.mycompany.meuProjeto;
 
+import com.mycompany.Contagem.Contagem;
 import java.time.LocalDate;
 /**
  *
@@ -18,13 +19,14 @@ public class Colaborador {
     private int anoNascimento;
     private int codRH; 
     private int idade;
-        
-    public Colaborador (String turno, String nome, int anoNascimento, int codRH){
+    
+    public Colaborador (String turno, String nome, int anoNascimento, int codRH, Contagem contagemTurno){
         this.nome = nome;
         this.anoNascimento = anoNascimento;
         this.codRH = codRH;
         this.idade = anoAtual - anoNascimento;
         this.turno = turno;
+        contagemTurno.setContagemDoTurno(this);
     }
     public String getTurno(){
         return this.turno;

@@ -48,4 +48,11 @@ public class Contagem {
     public int getCursoQuinta (){
         return this.cursoQuinta;
     }
+    
+    public void DetalheContagem(){
+        System.out.println("Total do turno A: "+this.getContagemA());
+        System.out.println("Total do turno B: "+this.getContagemB());
+        System.out.println("Total curso aos dias de terca: "+this.getCursoTerca());
+        System.out.println("Total curso aos dias de quinta: "+this.getCursoQuinta());
+    }
 }

@@ -4,6 +4,7 @@
  */
 package com.mycompany.meuProjeto.JovemAprendiz;
 
+import com.mycompany.Contagem.Contagem;
 import com.mycompany.meuProjeto.Colaborador;
 
 /**
@@ -12,12 +13,13 @@ import com.mycompany.meuProjeto.Colaborador;
  */
 public class JovemAprendiz extends Colaborador {
      private String diasCurso;
-    
-    public JovemAprendiz(String turno,String nome, int anoNascimento, int codRH, String diasCurso) {
-        super(turno, nome, anoNascimento, codRH); 
+     
+    public JovemAprendiz(String turno, String nome, int anoNascimento, int codRH, String diasCurso, Contagem contagemTurno, Contagem contagemDias) {
+        super(turno, nome, anoNascimento, codRH, contagemTurno ); 
         this.diasCurso = diasCurso;
+        contagemDias.setDiasdeCurso(this);
     }
-    
+
     public String getDiasCurso(){
        return this.diasCurso;
     }
@@ -28,7 +30,7 @@ public class JovemAprendiz extends Colaborador {
         System.out.println("Turno: " + this.getTurno());
         System.out.println("idade: "+this.getIdade());
         System.out.println("Dias de curso: "+this.getDiasCurso());
-         System.out.println("------------------------------");
+        System.out.println("------------------------------");
     }
     
 }
